@@ -1,70 +1,79 @@
-:root {
-  --primary: #0057b7;
-  --accent: #ffd700;
-  --bg: #f4f4f4;
-  --white: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: #222;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background: var(--primary);
-  color: var(--white);
+  background-color: #002b80;
+  color: white;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
 }
 
-.logo {
-  font-size: 1.5em;
+header .logo {
+  font-size: 24px;
   font-weight: bold;
 }
 
 nav a {
-  color: var(--white);
-  margin-left: 1em;
+  margin-left: 20px;
+  color: white;
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e0f0ff;
 }
 
-main {
-  padding: 2em;
+.hero h1 {
+  margin-bottom: 20px;
+  color: #002b80;
 }
 
-.page {
-  display: none;
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #ffc800;
+  border: none;
+  color: #002b80;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.page.active {
-  display: block;
-}
-
-.nft-grid {
-  display: flex;
-  gap: 1em;
+.nft-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
 }
 
 .nft-card {
-  background: var(--white);
+  background: white;
   border-radius: 8px;
-  padding: 1em;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
+.nft-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
 footer {
-  background: #222;
-  color: #ccc;
   text-align: center;
-  padding: 1.5em 1em;
-  margin-top: 2em;
+  padding: 20px;
+  background-color: #002b80;
+  color: white;
 }
