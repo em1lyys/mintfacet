@@ -1,13 +1,3 @@
-function showPage(pageId) {
-  const pages = document.querySelectorAll('.page');
-  pages.forEach(p => p.classList.remove('active'));
-  document.getElementById(pageId).classList.add('active');
-}
-
 function connectWallet() {
-  alert("Simulated Wallet Connect.");
-}
-
-function fakeLogin() {
-  alert("Login simulated. Feature under construction.");
+  alert("Wallet connection feature coming soon.");
 }
