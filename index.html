@@ -3,53 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MintFacet</title>
+  <title>MintFacet - NFT Marketplace</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <div class="logo">MintFacet</div>
     <nav>
-      <a href="#" onclick="showPage('home')">Home</a>
-      <a href="#" onclick="showPage('marketplace')">Marketplace</a>
-      <a href="#" onclick="showPage('faq')">FAQ</a>
-      <a href="#" onclick="showPage('login')">Login</a>
+      <a href="#">Home</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Login</a>
     </nav>
   </header>
 
-  <!-- PAGES -->
-  <main>
-    <section id="home" class="page active">
-      <h1>Welcome to MintFacet</h1>
-      <p>Secure & modern NFT marketplace built for creators.</p>
-      <button onclick="connectWallet()">Connect Wallet</button>
-    </section>
+  <section class="hero">
+    <h1>Discover, Collect, and Sell Extraordinary NFTs</h1>
+    <button onclick="connectWallet()">Connect Wallet</button>
+  </section>
 
-    <section id="marketplace" class="page">
-      <h2>Marketplace</h2>
-      <p>Explore our verified NFT collections.</p>
-      <div class="nft-grid">
-        <div class="nft-card"><img src="https://via.placeholder.com/200"/><p>NFT #001</p></div>
-        <div class="nft-card"><img src="https://via.placeholder.com/200"/><p>NFT #002</p></div>
-      </div>
-    </section>
-
-    <section id="faq" class="page">
-      <h2>Frequently Asked Questions</h2>
-      <p>Q: What is MintFacet?<br>A: A simplified NFT platform demo site.</p>
-    </section>
-
-    <section id="login" class="page">
-      <h2>Login</h2>
-      <input type="text" placeholder="Username" /><br><br>
-      <input type="password" placeholder="Password" /><br><br>
-      <button onclick="fakeLogin()">Login</button>
-    </section>
-  </main>
+  <section class="nft-gallery">
+    <div class="nft-card">
+      <img src="https://via.placeholder.com/300x300" alt="NFT Art" />
+      <h3>Golden Fox</h3>
+      <p>Creator: ArtByJane</p>
+      <p>Price: 1.2 ETH</p>
+    </div>
+    <div class="nft-card">
+      <img src="https://via.placeholder.com/300x300" alt="NFT Art" />
+      <h3>Cyber Ape</h3>
+      <p>Creator: NFT_King</p>
+      <p>Price: 0.95 ETH</p>
+    </div>
+    <div class="nft-card">
+      <img src="https://via.placeholder.com/300x300" alt="NFT Art" />
+      <h3>MetaVision</h3>
+      <p>Creator: VeeCreator</p>
+      <p>Price: 3.4 ETH</p>
+    </div>
+    <!-- Add more NFT cards as needed -->
+  </section>
 
   <footer>
-    <p>&copy; 2025 MintFacet</p>
+    <p>&copy; 2025 MintFacet. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
